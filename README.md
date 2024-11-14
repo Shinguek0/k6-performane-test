@@ -1,2 +1,3 @@
-# k6-performane-test
-Teste de performance de API
+# k6-performance-testing
+
+Performance test with Grafana K6
