@@ -12,10 +12,10 @@ export const options = {
     http_req_duration: ['avg<10000']
   },
   stages: [
-    { duration: '10s', target: 100 },
-    { duration: '30s', target: 400 },
-    { duration: '50s', target: 850 },
-    { duration: '1m' ,  target: 1000 }
+    { duration: '10s', target: 1 },
+    { duration: '30s', target: 2 },
+    { duration: '50s', target: 5 },
+    { duration: '1m', target: 10 }
   ]
 };
 
@@ -27,7 +27,8 @@ export function handleSummary(data) {
 }
 
 export default function () {
-  const baseUrl = 'https://pokeapi.co/api/v2/pokemon/incineroar';
+  //const baseUrl = 'https://pokeapi.co/api/v2/pokemon/incineroar';
+  const baseUrl = 'https://digimon-api.vercel.app/api/digimon/name/Yokomon';
 
   const params = {
     headers: {
