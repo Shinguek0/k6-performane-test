@@ -7,7 +7,9 @@
     "format": "prettier --write \"**/**.[jt]s?(x)\"",
     "verify": "prettier --check \"**/**.[jt]s?(x)\"",
     "test": "k6 --vus 10 --duration 10s run src/tests/Tests.spec.js",
-    "ci": "npm run format && npm run verify && npm run test"
+    "web": "k6 --vus 10 run --out web-dasboard src/tests/Tests.spec.js",
+    "ci": "npm run format && npm run verify && npm run test",
+    "cil": "npm run format && npm run verify && npm run web"
   },
   "devDependencies": {
     "k6": "^0.0.0",
