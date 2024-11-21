@@ -27,8 +27,7 @@ export function handleSummary(data) {
 }
 
 export default function () {
-  //const baseUrl = 'https://pokeapi.co/api/v2/pokemon/incineroar';
-  const baseUrl = 'https://digimon-api.vercel.app/api/digimon/name/Yokomon';
+  const baseUrl = 'https://pokeapi.co/api/v2/pokemon/incineroar';
 
   const params = {
     headers: {
